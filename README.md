@@ -15,3 +15,17 @@ O algoritmo é bem direto ao ponto:
 
 No final, cada região isolada fica com uma cor diferente.
 
+## Como rodar
+
+Pra testar o código, é só ter o Python instalado.
+
+1.  Clone o repo ou baixe os arquivos.
+2.  Abra o terminal na pasta do projeto.
+3.  Rode o comando:
+
+```bash
+python main.py
+```
+
+O script já tem uns testes prontos no final do arquivo, então você vai ver o resultado direto no terminal.
+
