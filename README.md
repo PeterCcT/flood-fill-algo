@@ -29,3 +29,48 @@ python main.py
 
 O script já tem uns testes prontos no final do arquivo, então você vai ver o resultado direto no terminal.
 
+## Exemplos de Execução
+
+Como fica o antes e depois:
+
+### Exemplo 1
+**Entrada:**
+Grid inicial (0 = livre, 1 = parede):
+```
+0 0 1 0 0
+0 1 1 0 0
+0 0 1 1 1
+1 1 0 0 0
+```
+*Coordenadas iniciais: (0, 0)*
+
+**Saída:**
+Grid preenchido (cada número > 1 é uma região diferente):
+```
+2 2 1 3 3
+2 1 1 3 3
+2 2 1 1 1
+1 1 4 4 4
+```
+*A região da esquerda virou 2, a do canto superior direito virou 3 e a de baixo virou 4*
+
+### Exemplo 2
+**Entrada:**
+Grid inicial:
+```
+0 1 0 0 1
+0 1 0 0 1
+0 1 1 1 1
+0 0 0 1 0
+```
+*Coordenadas iniciais: (0, 2)*
+
+**Saída:**
+Grid preenchido:
+```
+3 1 2 2 1
+3 1 2 2 1
+3 1 1 1 1
+3 3 3 1 4
+```
+*Aqui ele começou no meio (cor 2), depois achou a esquerda (cor 3) e o cantinho isolado (cor 4).*
